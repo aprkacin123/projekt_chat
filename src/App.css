@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8vw;
+}
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spremnikPoruka {
+  padding: 0.5em;
+  margin: 2% 0;
+  width: 100%;
+  height: 77%;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.poruka {
+  list-style-type: none;
+  margin-top: 2%;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+.poruka-align-right {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.8em;
+}
+
+.poruka-align-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.boja {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: block;
+}
+
+
+.sadrzaj {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.poruka-align-right .sadrzaj {
+  align-items: flex-end;
+}
+
+.poruka-align-left .sadrzaj {
+  align-items: flex-start;
+}
+
+
+.sadrzaj p {
+  display: inline-block;
+  padding: 0.6em;
+  border-radius: 1.1em;
+  color: whitesmoke;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: left;
+
+}
+
+.sadrzaj h4 {
+  padding-bottom: 5px;
+}
+
+.poruka-align-left .sadrzaj p {
+  background-color: blue;
+  justify-content: flex-start;
+}
+
+.poruka-align-right .sadrzaj p {
+  background-color: red;
+  justify-content: flex-end;
+}
+
+.form-Input {
+  z-index: 5;
+  width: 80%;
+  height: 5%;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.form-Input input {
+  border: 2px solid darkblue;
+  border-radius: 0.5em;
+  height: 50%;
+  width: 100vw;
+  text-align: left;
+  padding: 1%;
+  vertical-align: middle;
+  font-size: 1.5em;
+  margin-right: 1%;
+}
+
+.form-Input button {
+  font-size: 1em;
+  width: 10%;
+  height: 100%;
+  padding: 1%;
+  text-align: center;
+  color: black;
+  background-color: pink;
+  border-radius: 1em;
+  line-height: 20%;
+}
+
+.form-Input button:active {
+  background-color: red;
+  color: white;
+}
